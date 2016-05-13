@@ -6,16 +6,16 @@
 # http://doc.scrapy.org/en/latest/topics/items.html
 
 
-from scrapy.item import Item, Field
+import scrapy
 
-class TaobaoItem(Item):
-	name = Field();
-	keywords = Field();
-	temp = Field();
-	description = Field();
-	price_attr = Field();
-	price_value = Field();
-	attr = Field();
-	text = Field();
-	img = Field();
+class TaobaoItem(scrapy.Item):
+    name = scrapy.Field();
+    keywords = scrapy.Field();
+    gid = scrapy.Field();
+    description = scrapy.Field();
+    price_attr = scrapy.Field();
+    price_value = scrapy.Field();
+    attr = scrapy.Field();
+    text = scrapy.Field();
+    img = scrapy.Field();
 
